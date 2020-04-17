@@ -49,10 +49,10 @@ if(($_SERVER["REQUEST_METHOD"] == "POST") && isset($_POST['signInSubmit'])){
                               // Store data in session variables
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
-                            $_SESSION["Name"] = $Name;
+                            $_SESSION["Email"] = $Email;
 
                             // Redirect user to dashboard page
-                            header("location: backend/dashboard.php");
+                            header("location: dashboard.php");
 
                         } else{
                             // Display an error message if upass is not valid

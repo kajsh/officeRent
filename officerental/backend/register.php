@@ -92,10 +92,10 @@ if(($_SERVER["REQUEST_METHOD"] == "POST") && isset($_POST['signUpSubmit'])) {
 
                 $_SESSION["loggedin"] = true;
                 $_SESSION["id"] = $id;
-                $_SESSION["Name"] = $rName;
+                $_SESSION["Email"] = $rEmail;
 
                 // Redirect to dashboard page
-                header("location: backend/dashboard.php");
+                header("location: dashboard.php");
 
             } else{
                 echo "Something went wrong. Please try again later.";
