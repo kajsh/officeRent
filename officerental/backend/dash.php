@@ -25,7 +25,6 @@ $sql = "SELECT Name,Rentee FROM users WHERE Email = ?";
                     // Bind result variables
                     mysqli_stmt_bind_result($stmt, $Name, $Rentee);
                     if(mysqli_stmt_fetch($stmt)){
-
                     } else {
                     	echo "Something went wrong. Please try again later.";
             		}
