@@ -7,7 +7,7 @@ $Email = $Password = "";
 $Email_err = $Password_err = "";
  
 // Processing form data when form is submitted
-if(($_SERVER["REQUEST_METHOD"] == "POST") && isset($_POST['signInSubmit'])){
+if(isset($_POST['signInSubmit'])){
  
     // Check if Email is empty
     if(empty(trim($_POST["Email"]))){

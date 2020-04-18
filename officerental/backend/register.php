@@ -7,7 +7,7 @@ $rName = $rPassword = $rEmail = $rRentee = "";
 $rName_err = $rPassword_err = $rEmail_err = $rRentee_err = "";
  
 // Processing form data when form is submitted
-if(($_SERVER["REQUEST_METHOD"] == "POST") && isset($_POST['signUpSubmit'])) {
+if(isset($_POST['signUpSubmit'])) {
 
     // Validate name
     if(empty(trim($_POST["rName"]))){
