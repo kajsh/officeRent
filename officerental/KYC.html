@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <title>KYC</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body onload="disableSubmit() ">
+    <div class="header">
+  	<h2>Register</h2>
+     </div>
+	
+  <form method="post" action="KYC.html">
+  	
+
+	<div class="form-group">
+  	    <label>User Id</label>
+	    	<br>
+  	    <input type="text" name="uid" value="">
+  	</div>
+      
+      
+    <div class="form-group">
+  	    <label>First Name(as per the document)</label>
+		<br>
+  	    <input type="text" name="fname" value="">
+     </div>
+     
+     
+     <div class="form-group">
+  	    <label>Last Name(as per the document)</label>
+		<br>
+  	    <input type="text" name="lname" value="">
+  	</div>
+
+  	<div class="form-group">
+        <label for="ptype">Proof Type</label>
+        <br>
+        <select id="ptype">
+        <option value="aadhar">Aadhar</option>
+        <option value="PAN">PAN Card</option>
+      </select>
+      </div>
+
+
+  	<div class="form-group">
+        <label>Id Number(as per proof)</label>
+        <br>
+  	    <input type="idno" name="idno" value="">
+        </div>
+      
+    <div class="form-group">
+        <label> Address(as per proof)</label>
+        <br>
+  	    <input type="text" name="Address" value="">
+    </div>
+
+    
+    <div class="form-group">
+         <label>Issue date</label>
+          <br>
+  	     <input type="date" name="issuedate" >
+    </div>
+    
+    <div class="form-group">
+        <label>validity date</label>
+         <br>
+  	     <input type="date" name="validitydate" >
+	</div>
+
+     
+	<div class="form-group">
+       
+  	  <label>Contact Number</label> <br>
+  	  <input type="text" name="ucontact" >
+    </div>
+
+
+
+    <div class="form-group">
+        <label>Upload file</label>
+        <br>
+  	  <input type="file" name="fileToUpload" id="fileToUpload">
+    </div>
+
+   
+    
+
+    <div class="form-group">
+       <input type="checkbox" name="terms" id="terms" onclick="myFunction()"> The above information is true to my knowledge.
+       <br><br>
+    </div>
+  	
+  	<div class="form-group">
+	  <br>
+        <input type="submit" class="btn btn-primary" id="Submit" name="submit" value="Submit" disabled>
+    </div>
+  
+      <script>
+        function myFunction () {
+          document.getElementById("Submit").disabled = false;
+        }
+        </script>
+        
+  </form>
+</body>
+</html>
