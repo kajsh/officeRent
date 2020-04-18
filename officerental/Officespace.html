@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <title>OfficeSpace</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body onload="disableSubmit() ">
+    <div class="header">
+  	<h2>OfficeSpace</h2>
+     </div>
+	
+  <form method="post" action="OfficeSpace.html">
+  	
+
+    <div class="form-group">
+      <label>KYC Id</label>
+       <br>
+       <input type="Text" name="kycid" placeholder="Your KYC ID Here"  required>
+</div>
+      
+    <div class="form-group">
+  	    <label>Office Name</label>
+		<br>
+  	    <input type="text" name="oname" value="" required>
+     </div>
+     
+     
+   
+
+  	<div class="form-group">
+        <label for="otype">Office Type</label>
+        <br>
+        <select id="otype">
+        <option value="Conference Hall">Conference Hall</option>
+        <option value="Hot Desk">Hot Desk</option>
+        <option value="Co Working Spaces">Co-Working Spaces</option>
+      </select>
+      </div>
+
+
+  	<div class="form-group">
+        <label>Location</label>
+        <br>
+  	    <select id="Location">
+          <option value="Bangalore">Bangalore</option>
+          <option value="Mangalore">Mangalore</option>
+          <option value="Mumbai">Mumbai</option>
+        </select>
+        </div>
+      
+    <div class="form-group">
+        <label>Office Address</label>
+        <br>
+  	    <input type="text" name="oaddress" value="">
+    </div>
+
+    
+ 
+
+
+    <div class="form-group">
+      <label>Amenities</label>
+      <br>
+      <input type="checkbox" name="Amenities" value="Wi-Fi">WI-FI<br>
+      <input type="checkbox" name="Amenities" value="Caffeteria">Caffeteria<br>      </div>
+      <input type="checkbox" name="Ammenities" value="A/C">24/7 A/C<br>
+      <input type="checkbox" name="Amenities" value="Security">Security<br>      </div>
+      <input type="checkbox" name="Amenities" value="Electricity">Electricity<br>      </div>
+      <input type="checkbox" name="Amenities" value="CCTV">CCTV<br>      </div>
+      <input type="checkbox" name="Amenities" value="IP phones">IP Phones<br>      </div>
+      <input type="checkbox" name="Amenities" value="Parking">Parking<br>      </div>
+      
+      
+      <div class="form-group">
+        <label>Description</label>
+         <br>
+  	     <input type="Text" name="Description" >
+	</div>
+
+     
+	<div class="form-group">
+       <label>Whom To Contact?</label> <br>
+  	   <input type="" name="ucontact" placeholder="0123456789" pattern="[6-9]{1}[0-9]{9}" required>
+    </div>
+
+    <div class="form-group">
+       <label>Rent Plan</label> <br>
+       <input type="checkbox" name="terms" id="terms"> Hourly
+       <input type="checkbox" name="terms" id="terms"> Daily
+       <input type="checkbox" name="terms" id="terms"> Monthly
+    </div>
+
+
+
+    <div class="form-group">
+       
+  	  <label>Price Your Space</label> <br>
+  	  <input type="number" name="Price" placeholder="In INR" >
+    </div>
+
+  
+
+    <div class="form-group">
+        <label>Showcase Your space</label>
+        <br>
+      <input type="file" name="fileToUpload" id="fileToUpload">
+      <input type="file" name="fileToUpload" id="fileToUpload">
+      <input type="file" name="fileToUpload" id="fileToUpload">
+      <input type="file" name="fileToUpload" id="fileToUpload">
+    </div>
+
+
+    
+
+    <div class="form-group">
+       <input type="checkbox" name="terms" id="terms" onclick="myFunction()"> I agree to the terms and conditions.
+       <br><br>
+    </div>
+  	
+  	<div class="form-group">
+	  <br>
+        <input type="submit" class="btn btn-primary" id="Submit" name="submit" value="Submit" disabled>
+    </div>
+  
+      <script>
+        function myFunction () {
+          document.getElementById("Submit").disabled = false;
+        }
+        </script>
+        
+  </form>
+</body>
+</html>
